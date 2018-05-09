@@ -17,6 +17,8 @@ import Affix from './Affix.react';
 import Helper from './Helper.react';
 import Counter from './Counter.react';
 
+import { ViewPropTypes } from '../utils';
+
 const propTypes = {
 
     /**
@@ -85,8 +87,8 @@ const propTypes = {
     * Override Styles
     */
     style: PropTypes.shape({
-        inputContainer: View.propTypes.style,
-        container: View.propTypes.style,
+        inputContainer: ViewPropTypes.style,
+        container: ViewPropTypes.style,
         labelText: Text.propTypes.style,
         titleText: Text.propTypes.style,
         affixText: Text.propTypes.style,
